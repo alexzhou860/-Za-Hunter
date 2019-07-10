@@ -43,6 +43,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                 for mapItem in response.mapItems {
                     print(mapItem.name!)
                 }
+                for mapItem in response.mapItems {
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = mapItem.placemark.coordinate
+                    annotation.title = mapItem.name
+                    self.mapView.addAnnotation(annotation)
+                }
             }
         }
     }
