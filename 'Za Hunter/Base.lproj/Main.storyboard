@@ -79,11 +79,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXm-ST-kE1">
+                                <rect key="frame" x="162" y="566" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="CYu-iq-Eu8"/>
+                                    <constraint firstAttribute="height" constant="30" id="drS-tF-gtK"/>
+                                </constraints>
+                                <state key="normal" title="Directions"/>
+                                <connections>
+                                    <action selector="onDirectionsButtonTapped:" destination="bEm-Ox-OBa" eventType="touchUpInside" id="Enj-0V-lt3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwa-Nv-wgS">
+                                <rect key="frame" x="162" y="656" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DHU-vf-eTf"/>
+                                    <constraint firstAttribute="width" constant="90" id="RrT-fh-mQE"/>
+                                </constraints>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="onWebsiteButtonTapped:" destination="bEm-Ox-OBa" eventType="touchUpInside" id="xZd-5V-Mqb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XMP-ph-AAk" firstAttribute="top" secondItem="bwU-NF-zoL" secondAttribute="top" constant="44" id="7Ao-2m-7HO"/>
                             <constraint firstItem="XMP-ph-AAk" firstAttribute="centerX" secondItem="In1-HZ-Aes" secondAttribute="centerX" id="8c3-kd-xih"/>
+                            <constraint firstItem="Fwa-Nv-wgS" firstAttribute="top" secondItem="vXm-ST-kE1" secondAttribute="bottom" constant="60" id="DzF-9v-2l1"/>
+                            <constraint firstItem="Fwa-Nv-wgS" firstAttribute="centerX" secondItem="In1-HZ-Aes" secondAttribute="centerX" id="V4s-lv-6N3"/>
+                            <constraint firstItem="vXm-ST-kE1" firstAttribute="top" secondItem="6Me-CM-MF0" secondAttribute="bottom" constant="60" id="YZL-H2-anh"/>
+                            <constraint firstItem="vXm-ST-kE1" firstAttribute="centerX" secondItem="In1-HZ-Aes" secondAttribute="centerX" id="b1M-tq-hE2"/>
                             <constraint firstItem="Y0N-ew-fKf" firstAttribute="centerX" secondItem="In1-HZ-Aes" secondAttribute="centerX" id="bWI-2X-NTV"/>
                             <constraint firstItem="6Me-CM-MF0" firstAttribute="centerX" secondItem="In1-HZ-Aes" secondAttribute="centerX" id="doi-Gh-vPu"/>
                             <constraint firstItem="6Me-CM-MF0" firstAttribute="top" secondItem="Y0N-ew-fKf" secondAttribute="bottom" constant="62" id="j6r-Sf-0RM"/>
